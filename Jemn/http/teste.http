@@ -1,0 +1,42 @@
+GET http://localhost:8080/usuarios
+####
+GET http://localhost:8080/usuarios/1
+####
+POST http://localhost:8080/ecommerce/usuarios
+Content-Type: application/json
+
+# {
+#     "nomeUsuario": "Rorivaldo7",
+#     "email": "rorivadfg7@gmail.com",
+#     "senha": "1234567",
+#     "telefone": "219929456297",
+#     "perfil": "ADMIN"
+# }
+
+# {
+#     "nomeUsuario": "Eduardo",
+#     "email": "teste@gmail.com",
+#     "senha": "654321",
+#     "telefone": "219929456288",
+#     "perfil": "USUARIO"
+# }
+
+
+####
+POST http://localhost:8080/ecommerce/usuarios/login
+Content-Type: application/json
+
+{
+    "email": "rorivadfg7@gmail.com",
+    "senha": "1234567"
+}
+
+# {
+#     "email": "teste@gmail.com",
+#     "senha": "654321"
+# }
+
+####
+GET http://localhost:8080/ecommerce/categorias
+//Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjk3NzM5MTM4LCJleHAiOjE2OTc4MjU1Mzh9.4x2PKAQvB58HBqKBdbd44_4bJpYJGf7GcOaMoU6tpMo
+//Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjk3NzM5MjQzLCJleHAiOjE2OTc4MjU2NDN9.kIwbRNgu2lOZxebzaEla73M5bWVND0QwSZXENuZ8Y5U
